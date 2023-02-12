@@ -1,4 +1,4 @@
-class MyAccount {
+abstract class MyAccount {
   var myBalance = 1000000;
 
   void addDeposit(int add) {
