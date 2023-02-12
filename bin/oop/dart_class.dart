@@ -1,4 +1,5 @@
 void main() {
+  //to access claas the crate a object instead of class
   var firstSemeterResult = TestClass();
   firstSemeterResult.firstSemester();
 }
@@ -15,5 +16,8 @@ class TestClass {
     final String result = '3.56';
     print(
         'A student of $university University named $name has a first semester score of $result ');
+    //using this keyword we can also access the global variable
+    print(
+        'A student of ${this.university} University named ${this.name} has a first semester score of $result ');
   }
 }
